@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Guest</title>
+  <!-- style sheet  -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg my-nav text-white" style="height: 100px;">
+    <div class="container">
+      <a class="navbar-brand flex-row align-items-center justify-content-center" href="#"><img width="200"
+          src="./images/Group 2.png" alt="">
+      </a>
+      <form class="search-field d-lg-flex mx-5">
+        <label class="position-relative" for="search">
+          <img class="position-absolute" style="top: 15px; left: 20px;" src="./images/Search.png" alt="">
+          <input id="search" class="form-control ps-5" style="width: 400px; height: 55px;" type="search"
+            placeholder="Search" aria-label="Search">
+        </label>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon  bg-white"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav gap-5 me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="d-flex align-items-center justify-content-center list-unstyled gap-4 mb-0">
+          <li><a href="">
+              <img src="./images/Cart1.png" alt="">
+            </a></li>
+          <li>
+            <a href=""><img src="./images/User.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- slider section-->
+  <section id="carouselExample" class="banner-section carousel slide" style="height: calc(100vh - 100px);">
+    <div class="carousel-inner banner-container">
+      <!-- Carousel item one -->
+      <div class="carousel-item active banner-item">
+        <div class="container d-flex align-items-center justify-content-between" style="height: 95vh;">
+          <div class="w-50 banner-left">
+            <p style="font-size: 25px; font-weight: 400; opacity: 0.4;">Pro.Beyond.</p>
+            <h1 style="font-size: 96px; font-weight: 400; letter-spacing: -0.96px;">IPhone <span
+                style="font-weight: 600;">14 Pro</span></h1>
+            <p style="font-size: 18px; font-weight: 400;">Created to change everything for the better. For everyone</p>
+            <button
+              style="background-color: #171495; padding: 16px 56px; display: inline-flex; justify-content: center; align-items: center; gap: 8; border-radius: 6px; border: 1px solid #fff; color: #fff;">Shop
+              Now</button>
+          </div>
+          <img class="position-absolute" style="top: 250px; right: 300px;" src="./images/Iphone Image.png" alt="...">
+        </div>
+      </div>
+      <!-- Carousel item two -->
+      <div class="carousel-item banner-item">
+        <div class="container d-flex align-items-center justify-content-between" style="height: 95vh;">
+          <div class="w-50 banner-left">
+            <p style="font-size: 25px; font-weight: 400; opacity: 0.4;">Pro.Beyond.</p>
+            <h1 style="font-size: 96px; font-weight: 400; letter-spacing: -0.96px;">Ipad <span
+                style="font-weight: 600;">14
+                Pro</span></h1>
+            <p style="font-size: 18px; font-weight: 400;">Created to change everything for the better. For everyone</p>
+            <button
+              style="background-color: #171495; padding: 16px 56px; display: inline-flex; justify-content: center; align-items: center; gap: 8; border-radius: 6px; border: 1px solid #fff; color: #fff;">Shop
+              Now</button>
+          </div>
+          <img class="position-absolute" style="top: 250px; right: 180px; width: 850px;" src="./images/ipad.png"
+            alt="...">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <img src="./images/Group 4.png" alt="">
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <img src="./images/Group 3.png" alt="">
+    </button>
+  </section>
+  <!-- Browse by category section -->
+  <section class='category-container'>
+    <div class="container">
+      <div class="mb-5 d-flex justify-content-between align-items-center">
+        <h2>Browse By Category</h2>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path
+              d="M21.3333 27.6667C21.0679 27.6679 20.8132 27.5622 20.6267 27.3733L9.95999 16.7067C9.57006 16.3162 9.57006 15.6838 9.95999 15.2933L20.6267 4.62667C21.0207 4.25952 21.6347 4.27035 22.0155 4.65117C22.3963 5.03199 22.4071 5.64599 22.04 6.04L12.08 16L22.04 25.96C22.4299 26.3504 22.4299 26.9829 22.04 27.3733C21.8535 27.5622 21.5987 27.6679 21.3333 27.6667Z"
+              fill="black" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path
+              d="M10.6667 4.33333C10.9321 4.33208 11.1868 4.43782 11.3733 4.62667L22.04 15.2933C22.4299 15.6838 22.4299 16.3162 22.04 16.7067L11.3733 27.3733C10.9793 27.7405 10.3653 27.7296 9.98451 27.3488C9.60369 26.968 9.59286 26.354 9.96001 25.96L19.92 16L9.96001 6.04C9.57007 5.64958 9.57007 5.01709 9.96001 4.62667C10.1465 4.43782 10.4013 4.33208 10.6667 4.33333Z"
+              fill="black" />
+          </svg>
+        </div>
+      </div>
+      <div class="category-card-area">
+        <!-- card one -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+        <!-- card two -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+        <!-- card three -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+        <!-- card four -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+        <!-- card five -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+        <!-- card six -->
+        <div class="category">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <g clip-path="url(#clip0_33_54)">
+              <path
+                d="M33.375 5.25H14.625C13.3306 5.25 12.2812 6.29933 12.2812 7.59375V40.4062C12.2812 41.7007 13.3306 42.75 14.625 42.75H33.375C34.6694 42.75 35.7188 41.7007 35.7188 40.4062V7.59375C35.7188 6.29933 34.6694 5.25 33.375 5.25Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6H26.6875" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 37.7188V37.7404" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="13" y1="34" x2="35" y2="34" stroke="black" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_54">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>Phones</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Products section -->
+  <section class="container" style="padding: 56px 0px;">
+    <div>
+      <div class="d-flex gap-4">
+        <h4 style="border-bottom: 3px solid black; padding-bottom: 3px;">New Arrival</h4>
+        <h4 style="color: #8B8B8B;">Bestseller</h4>
+        <h4 style="color: #8B8B8B;">Featured Products</h4>
+      </div>
+      <div class="d-lg-flex gap-lg-4 mt-4 product-card-area">
+        <!-- Card one -->
+        <div class="product-card">
+          <span class="d-block w-100 text-end">
+            <img src="./images/Favorite_duotone.png" alt="">
+          </span>
+          <img style="width: 160px; height: 160px;" src="./images/Iphone 14 pro 1-2.png" alt="">
+          <h3 class="text-center w-75">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</h3>
+          <span>$900</span>
+          <button>Buy Now</button>
+        </div>
+        <!-- Card Two -->
+        <div class="product-card">
+          <span class="d-block w-100 text-end">
+            <img src="./images/Favorite_duotone.png" alt="">
+          </span>
+          <img style="width: 160px; height: 160px;" src="./images/Iphone 14 pro 1-3.png" alt="">
+          <h3 class="text-center w-75">Blackmagic Pocket Cinema Camera 6k</h3>
+          <span>$2535</span>
+          <button>Buy Now</button>
+        </div>
+        <!-- Card Three -->
+        <div class="product-card">
+          <span class="d-block w-100 text-end">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M5.93421 18.5443L15.3153 27.3568C15.6397 27.6616 15.802 27.814 16 27.814C16.198 27.814 16.3602 27.6616 16.6847 27.3568L26.0657 18.5443C28.674 16.0941 28.9907 12.0621 26.7971 9.23476L26.3846 8.70312C23.7603 5.32077 18.4928 5.88802 16.6489 9.75154C16.3884 10.2973 15.6116 10.2973 15.3511 9.75154C13.5071 5.88802 8.23961 5.32078 5.61537 8.70312L5.2029 9.23476C3.00924 12.0621 3.32598 16.0941 5.93421 18.5443Z"
+                fill="#FF0000" />
+            </svg>
+          </span>
+          <img style="width: 160px; height: 160px;" src="./images/Iphone 14 pro 1-1.png" alt="">
+          <h3 class="text-center w-75">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</h3>
+          <span>$399</span>
+          <button>Buy Now</button>
+        </div>
+        <!-- Card Four -->
+        <div class="product-card">
+          <span class="d-block w-100 text-end">
+            <img src="./images/Favorite_duotone.png" alt="">
+          </span>
+          <img style="width: 160px; height: 160px;" src="./images/Iphone 14 pro 1.png" alt="">
+          <h3 class="text-center w-75">AirPods Max Silver</h3>
+          <span>$549</span>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 11:11 Sale section  -->
+  <section class="h-auto" style="background: #958AD4;">
+    <div class="d-lg-flex" style="height: 75vh;">
+      <div class="col-lg-4 d-flex align-items-center">
+        <img class="h-75 w-75  position-relative" style="right: 80px;" src="./images/image 19.png" alt="">
+      </div>
+      <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <div>
+          <h2 class="text-white text-center fw-bold"
+            style="font-size: 72px; letter-spacing: -0.72px; line-height: 72px;"><span class="me-2"
+              style="color: #25177B;">11:11</span>Sale
+          </h2>
+          <p class="text-center text-white" style="font-size: 16px; font-weight: 400; line-height: 32px; width: 383px;">
+            Lorem
+            ipsum
+            dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 overflow-hidden d-flex align-items-center justify-content-center">
+        <img class="h-75 w-75  position-relative" style="left: 80px;" src="./images/ipad 2.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <div class="row text-center">
+        <div class="col-lg-2 mx-auto">
+          <img class="w-100" src="./images/Group 2.png" alt="">
+        </div>
+        <div class="col-lg-2">
+          <div class="d-flex justify-content-around">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+              <g clip-path="url(#clip0_2_801)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.5 2.91193C15.9121 3.17965 15.2791 3.3607 14.6152 3.4416C15.2932 3.02556 15.8135 2.36588 16.0586 1.58004C15.4238 1.96525 14.7222 2.2455 13.9728 2.39573C13.3755 1.74183 12.5218 1.3335 11.5771 1.3335C9.76548 1.3335 8.29574 2.84066 8.29574 4.69933C8.29574 4.9632 8.32391 5.21938 8.38026 5.46592C5.65208 5.32531 3.23381 3.98668 1.61381 1.94792C1.33113 2.44677 1.1696 3.02556 1.1696 3.64191C1.1696 4.80912 1.74905 5.83958 2.62995 6.4434C2.09277 6.42703 1.58563 6.27391 1.14236 6.02352V6.06493C1.14236 7.69632 2.27402 9.0571 3.77663 9.36527C3.50147 9.44424 3.21128 9.48373 2.91169 9.48373C2.70039 9.48373 2.49378 9.46351 2.29374 9.42402C2.71166 10.7607 3.92313 11.7344 5.36001 11.7604C4.2368 12.6637 2.82059 13.202 1.28323 13.202C1.0184 13.202 0.756383 13.1866 0.5 13.1558C1.95284 14.1092 3.67896 14.6668 5.53187 14.6668C11.5705 14.6668 14.8715 9.53862 14.8715 5.09033C14.8715 4.94394 14.8687 4.79756 14.8631 4.65407C15.5045 4.17929 16.0614 3.58702 16.5 2.91193Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_801">
+                  <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+              <path
+                d="M9.68089 3.81794C9.68089 3.98169 9.68089 4.51541 9.68089 5.27366H12.2879L12.0052 7.59763H9.68089C9.68089 11.1816 9.68089 15.9843 9.68089 15.9843H6.59571C6.59571 15.9843 6.59571 11.2452 6.59571 7.59763H4.98811V5.27366H6.59571C6.59571 4.35204 6.59571 3.69669 6.59571 3.51422C6.59571 2.64485 6.53021 2.23235 6.89961 1.55866C7.26921 0.885005 8.31171 -0.00543266 10.1148 0.0160048C11.9183 0.0382236 12.6786 0.211724 12.6786 0.211724L12.2879 2.6885C12.2879 2.6885 11.1362 2.38441 10.571 2.49279C10.0064 2.60119 9.68089 2.94894 9.68089 3.81794Z"
+                fill="white" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+              <path
+                d="M12.0503 3.358C11.3909 2.59144 11.0455 1.60104 11.073 0.592723L8.60916 0.533203C8.60916 0.533203 8.60916 0.638323 8.60916 0.780083V10.6602C8.64356 13.786 3.705 13.7102 4.09572 10.2551C4.3346 8.88136 5.81076 8.03592 7.12244 8.51384V5.99992C4.26676 5.50264 1.56052 7.7756 1.589 10.6713C1.8386 16.9513 10.846 16.9521 11.0959 10.6713C11.033 10.4465 11.0682 6.26152 11.0592 5.90856C12.1796 6.60568 13.4831 6.95416 14.8032 6.90952V4.3132C13.5828 4.3132 12.6514 3.98872 12.0503 3.358Z"
+                fill="white" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+              <g clip-path="url(#clip0_2_804)">
+                <path
+                  d="M8.50001 14.6667C7.07052 14.6667 6.04183 14.666 5.23981 14.5882C4.44698 14.5114 3.93981 14.3637 3.53506 14.1093C3.07246 13.8187 2.68129 13.4276 2.39062 12.965C2.13637 12.5602 1.9886 12.0531 1.91183 11.2602C1.83405 10.4582 1.83334 9.42954 1.83334 8.00004C1.83334 6.57055 1.83405 5.54186 1.91183 4.73984C1.9886 3.94701 2.13637 3.43984 2.39062 3.03509C2.68128 2.57248 3.07245 2.18131 3.53506 1.89065C3.93981 1.6364 4.44698 1.48863 5.23981 1.41186C6.04173 1.33408 7.07041 1.33337 8.50001 1.33337C9.92951 1.33337 10.9582 1.33408 11.7602 1.41186C12.553 1.48863 13.0602 1.6364 13.465 1.89065C13.9275 2.18132 14.3187 2.57249 14.6093 3.03509C14.8636 3.43984 15.0113 3.94701 15.0882 4.73984C15.166 5.54186 15.1667 6.57055 15.1667 8.00004C15.1667 9.42954 15.166 10.4582 15.0882 11.2602C15.0113 12.0531 14.8636 12.5602 14.6093 12.965C14.3187 13.4276 13.9275 13.8187 13.465 14.1093C13.0602 14.3637 12.553 14.5114 11.7602 14.5882C10.9582 14.666 9.92951 14.6667 8.50001 14.6667Z"
+                  fill="white" stroke="white" stroke-width="2" />
+                <path
+                  d="M8.50001 11.3333C9.97277 11.3333 11.1667 10.1394 11.1667 8.66667C11.1667 7.19391 9.97277 6 8.50001 6C7.02725 6 5.83334 7.19391 5.83334 8.66667C5.83334 10.1394 7.02725 11.3333 8.50001 11.3333Z"
+                  fill="white" stroke="black" stroke-width="2" />
+                <path
+                  d="M11.75 5.5C12.1642 5.5 12.5 5.16421 12.5 4.75C12.5 4.33579 12.1642 4 11.75 4C11.3358 4 11 4.33579 11 4.75C11 5.16421 11.3358 5.5 11.75 5.5Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_804">
+                  <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-start"
+          style="align-self: stretch; color: #cfcfcf; font-size: 14px; font-weight: 300; line-height: 32px;">
+          <h4>Services</h4>
+          <h5>Bonus program</h5>
+          <h5>Gift cards</h5>
+          <h5>Credit and payment</h5>
+          <h5>Service contracts</h5>
+          <h5>Non-cash account</h5>
+          <h5>Payment</h5>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-start"
+          style="align-self: stretch; color: #cfcfcf; font-size: 14px; font-weight: 300; line-height: 32px;">
+          <h4>Assistance to the buyer</h4>
+          <h5>Find an order</h5>
+          <h5>Terms of delivery</h5>
+          <h5>Exchange and return of goods</h5>
+          <h5>Guarantee</h5>
+          <h5>Frequently asked questions</h5>
+          <h5>Terms of use of the
+            site</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

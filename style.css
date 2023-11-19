@@ -1,0 +1,125 @@
+.my-nav {
+  background-color: #1a187a;
+}
+
+.banner-section {
+  height: "100px";
+}
+
+.banner-item {
+  background: url("./images/bg-gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: "lightgray";
+}
+
+/* category section  */
+.category-container {
+  background: #fafafa;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.category-card-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  border-radius: 15px;
+  background: #ededed;
+  color: #000;
+  display: flex;
+  width: 170px;
+  height: 130px;
+  min-width: 135px;
+  padding: 24px 52px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.category h3 {
+  color: black;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.product-card {
+  display: flex;
+  background-color: #f6f6f6;
+  min-width: 200px;
+  padding: 24px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 9px;
+  outline: none;
+}
+
+.product-card h3 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.product-card span {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.72px;
+}
+
+.product-card button {
+  background-color: #000;
+  color: white;
+  width: 75%;
+  padding: 12px 64px;
+  border-radius: 8px;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+  /* Browse by category section */
+  .category-container {
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .category-card-area {
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+
+  .category {
+    width: auto;
+  }
+
+  /* products section */
+  .product-card-area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+  }
+
+  .search-field {
+    display: none;
+  }
+}
