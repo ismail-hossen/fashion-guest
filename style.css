@@ -92,7 +92,117 @@
   border-radius: 8px;
 }
 
-/* media query */
+/* hot-product-section */
+.wrapper {
+  margin: 52px auto 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4, [col] auto);
+  grid-template-rows: repeat(2, [row] auto);
+}
+
+.box {
+  padding: 20px;
+  display: flex;
+  font-size: 150%;
+}
+
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
+  display: flex;
+  height: 330px;
+  justify-content: end;
+}
+
+.a div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.a img {
+  left: 0px;
+}
+
+.a h4 {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.a p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #909090;
+}
+
+.b {
+  grid-column: col 3 / span 2;
+  grid-row: span 2;
+  background: #ededed;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.b > div {
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.b h4 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 56px;
+}
+
+.b h4 span {
+  font-weight: 500;
+}
+
+.b p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #909090;
+  line-height: 24px;
+}
+
+.b button {
+  border-radius: 6px;
+  background: #27448e;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+.b img {
+  right: -350px;
+  top: 100px;
+}
+
+.c {
+  grid-column: col / span 2;
+  grid-row: row 2;
+  background: #adc2d7;
+  overflow: hidden;
+  height: 275px;
+}
+
+.c img {
+  top: -270px;
+  left: -170px;
+}
+
+/* media query for small devices*/
 @media screen and (max-width: 576px) {
   /* Browse by category section */
   .category-container {
@@ -121,5 +231,62 @@
 
   .search-field {
     display: none;
+  }
+
+  /* hot-product-section */
+  .wrapper {
+    margin: 52px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 20px;
+    display: flex;
+    font-size: 150%;
+  }
+
+  .a {
+    width: 100%;
+    order: 1;
+  }
+
+  .a img {
+    height: 70%;
+    left: -10px;
+    bottom: -5px;
+  }
+
+  .b {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .b div {
+    order: 1;
+    width: 100%;
+  }
+
+  .b img {
+    width: 100%;
+    order: 2;
+    right: -200px;
+    top: 100px;
+  }
+
+  .c {
+    order: 2;
+  }
+
+  .c div {
+    width: 50%;
+  }
+
+  .c img {
+    width: 50%;
+    top: 0px;
+    left: -180px;
   }
 }
